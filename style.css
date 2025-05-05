@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#ffaaaa,#cf004c);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+.container {
+    background:linear-gradien(#ffaaaa);
+    border:2px solid black;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+header{
+    text-align: center;
+    justify-content: center;
+    color:black;
+}
+input[type="text"] {
+    width: 370px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color:#0f0f0f;
+    margin-right: 1rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+input[type="text"]:hover {
+    background:#ffaaaa;
+    color:black;
+}
+button {
+    padding: 0.8rem 1rem;
+    margin:12px;
+    border-radius: 8px; 
+    justify-content: center;
+    border: none;
+    background: #c74f4f;
+    color: #0f0f0f;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+    background: #d11626;
+    color:aliceblue;
+}
+.todo {
+    background: white;
+    color:black;
+    border:2px  solid black;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.3s;
+}
+.todo:hover {
+    transform: translateY(-3px);
+    background:black;
+    color:white;
+}
+.task {
+    flex: 1;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.delete,
+.edit {
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s;
+}
+.delete:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.edit:hover {
+    transform: scale(1.1);
+    color: white;
+}
+svg {
+    fill: currentColor;
+}
